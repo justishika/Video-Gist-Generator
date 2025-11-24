@@ -288,14 +288,24 @@ body {
 }
 
 .summary-text {
-    font-size: 1.05rem;
-    line-height: 1.8;
-    color: var(--text-muted);
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #F0F0FF;
+    /* Soft blue-white for high contrast */
 }
 
 .summary-text b {
-    color: #f8fafc;
-    font-weight: 600;
+    color: #FFFFFF;
+    font-weight: 800;
+    display: block;
+    /* Makes numbered points stand out more */
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+/* Ensure the first item doesn't have a huge top margin if not needed */
+.summary-text b:first-child {
+    margin-top: 0;
 }
 
 /* Metadata & Spinner */
